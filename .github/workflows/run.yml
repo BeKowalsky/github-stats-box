@@ -19,9 +19,11 @@ jobs:
 
             # - uses: actions/checkout@master
             # - run: npm ci
-            - run: npx github-stats-box@1
+            - uses: actions/checkout@master
+            - run: npm ci
+            - run: npm start
               env:
-                  GH_TOKEN: ${{ secrets.GH_TOKEN }} # Do not edit, defined in secrets
+                  GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
                   # Edit the following environment variables
                   GIST_ID: df3c819499b79d73c436f892f6cbab19 # The ID portion from your gist url
