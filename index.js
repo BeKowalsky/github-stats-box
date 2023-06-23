@@ -64,9 +64,9 @@ async function updateGist(stats) {
     const gistContent =
         [
             ['⭐', `Total Stars`, humanize(stats.totalStars)],
-            ['➕', countAllCommits ? 'Total Commits' : 'Past Year Commits', humanize(stats.totalCommits)],
-            ['🔀', `Total PRs`, humanize(stats.totalPRs)],
-            ['🚩', `Total Issues`, humanize(stats.totalIssues)],
+            ['🔨', countAllCommits ? 'Total Commits' : 'Past Year Commits', humanize(stats.totalCommits)],
+            ['✅', `Total PRs`, humanize(stats.totalPRs)],
+            ['⭕️', `Total Issues`, humanize(stats.totalIssues)],
             ['📦', `Contributed to`, humanize(stats.contributedTo)],
         ]
             .map((content) => {
